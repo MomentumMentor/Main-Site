@@ -6,6 +6,8 @@ import { useAuth, signOut, checkBetaApproval } from '../../hooks/useAuth'
 import { motion } from 'framer-motion'
 import { LogOut, Loader2 } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 export default function Dashboard() {
   const { user, loading } = useAuth()
   const router = useRouter()
